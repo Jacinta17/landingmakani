@@ -5,8 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Makani by the Beach</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Config for Hatton Font -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            hatton: ['Hatton', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Hatton', serif;
+    }
+  </style>
 </head>
-<body class="bg-[#f3e5dc] text-black">
+<body class="bg-[#f3e5dc] text-black font-['Hatton']">
 
 <!-- Hero Section -->
 <section class="relative h-screen overflow-hidden">
